@@ -367,31 +367,33 @@
             </header>
             <section class="docs-section" id="item-5-1">
               <h2 class="section-heading">implementasi DDA</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
+              <div>
+                <canvas id="dda" width=800 height="360" style="border:1px solid #d3d3d3; animation-duration: 0.7;"></canvas>
+              </div>
+              <form action="">
+                <input id="dda_x1" type="number"  style="width: 50px;" maxlength="3" placeholder="x1" required>
+                <input id="dda_y1" type="number"  style="width: 50px;" maxlength="3" placeholder="y1" required>
+                <input id="dda_x2" type="number"  style="width: 50px;" maxlength="3" placeholder="x2" required>
+                <input id="dda_y2" type="number"  style="width: 50px;" maxlength="3" placeholder="y2" required>
+                <button onclick="hitungDda()">generate dda</button>
+                <button onclick="clearDda()">clear canvas</button>
+              </form>
             </section>
             <!--//section-->
 
             <section class="docs-section" id="item-5-2">
               <h2 class="section-heading">Implementasi Bresenham</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
+                <div>
+                  <canvas id="bresenhem" width=800 height="360" style="border:1px solid #d3d3d3; animation-duration: 0.7;"></canvas>
+                </div>
+              <form action="">
+                <input id="bre_x1" type="number"  style="width: 50px;" maxlength="3" placeholder="x1" required>
+                <input id="bre_y1" type="number"  style="width: 50px;" maxlength="3" placeholder="y1" required>
+                <input id="bre_x2" type="number"  style="width: 50px;" maxlength="3" placeholder="x2" required>
+                <input id="bre_y2" type="number"  style="width: 50px;" maxlength="3" placeholder="y2" required>
+                <button onclick="hitungBresemham()">generate bresenham</button>
+                <button onclick="clearBresemhem()">clear canvas</button>
+              </form>
             </section>
             <!--//section-->
 
@@ -401,6 +403,27 @@
       </div>
     </div>
     <!--//docs-wrapper-->
+
+    <script>
+      function hitungDda(){
+        var dda_x1 = document.getElementById("dda_x1").value;
+        var dda_x2 = document.getElementById("dda_x2").value;
+        var dda_y1 = document.getElementById("dda_y1").value;
+        var dda_y2 = document.getElementById("dda_y2").value;
+
+        dda(dda_x1,dda_y1,dda_x2,dda_y2);
+        // dda(10,10,130,130);
+      }
+
+      function hitungBresemham(){
+        var bre_x1 = document.getElementById("bre_x1").value;
+        var bre_x2 = document.getElementById("bre_x2").value;
+        var bre_y1 = document.getElementById("bre_y1").value;
+        var bre_y2 = document.getElementById("bre_y2").value;
+
+        bresenhem(bre_x1,bre_y1,bre_x2,bre_y2);
+      }
+    </script>
 
     <!-- Javascript -->
     <script src="assets/plugins/jquery-3.4.1.min.js"></script>
@@ -413,5 +436,6 @@
     <script src="assets/plugins/jquery.scrollTo.min.js"></script>
     <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
     <script src="assets/js/docs.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
