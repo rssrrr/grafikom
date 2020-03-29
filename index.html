@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafika Komputer</title>
+  </head>
+	<style>
+		body {
+			margin-left: 15%;
+			margin-right: 15%;
+			line-height:2;
+			text-align: justify;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		h1 {
+			line-height: normal;
+		}
+	</style>
+  <body>
+    <nav>
+      <h1>Grafika Komputer</h1>
+      <ul>
+        <li>
+          <a href="#">daftar isi</a>
+          <ul>
+            <li><a href="#grafika">Apa itu Grafika Komputer?</a></li>
+            <li>
+              <a href="#primitif">Objek Primitif</a>
+              <ul>
+                <li>
+                  <a href="">Penggambaran Objek Primitif</a>
+                  <ul>
+                    <li><a href="">Penggambaran Titik dan Garis</a></li>
+                    <ul>
+                      <li><a href="">Algoritma DDA</a></li>
+                      <li><a href="">Algoritma Bresenham</a></li>
+                    </ul>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">resources</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1>Selamat datang</h1>
+      <h2>
+        website ini merupakan media pembelajaran tentang ilmu grafika komputer
+      </h2>
+    </section>
+
+    <section id="grafika">
+      <h1>Apa itu Grafika Komputer ?</h1>
+      <p>
+        Grafika komputer adalah teknik-teknik dalam ilmu komputer dan matematika
+        untuk merepresentasikan dan memanipulasi data gambar menggunakan
+        komputer. Dengan bahasa lain, istilah grafika komputer juga dapat
+        diartikan segala sesuatu selain teks atau suara.
+      </p>
+      <p>
+        Salah satu aplikasi yang nyata dari grafika komputer adalah untuk
+        visualisasi data dalam bentuk grafis 2D atau 3D dilengkapi dengan
+        animasi. Grafika komputer muncul sebagai bagian ilmu komputer yang
+        mempelajari metode-metode sintesa dan manipulasi konten visual secara
+        dijital.
+      </p>
+      <p>
+        lihat juga video penjelasan tentang grafika komputer oleh crash course
+        melalui video berikut
+      </p>
+      <p>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/TEAtmCYYKZA"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </p>
+    </section>
+
+    <section id="primitif">
+      <h1>Objek Primitif</h1>
+      <p>
+        Gambar dapat dijelaskan dengan beberapa cara, bila menggunakan raster
+        display, gambar ditentukan oleh satu set intensitas untuk posisi display
+        pada display. Sedangkan dengan scenetampilan gambar dengan loading array
+        dari pixel ke dalam buffer atau dengan mengkonversikan scan dari grafik
+        geometri tertentu ke dalam pola pixel. Paket grafika dilengkapi dengan
+        fungsi untuk menyatakan scene dalam bentuk struktur. Paket pemrograman
+        grafika dilengkapi dengan fungsi untuk menyatakan scenedalam bentuk
+        struktur dasar geometri yang disebut output primitif, dengan memasukkan
+        output primitif tersebut sebagai struktur yang lebih kompleks.
+      </p>
+      <p>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/ZAF4KrPZ2Y4?start=34"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </p>
+    </section>
+
+    <section>
+      <h1>Penggambaran Titik dan Garis</h1>
+      <p>
+        Pembentukan titik dilakukan dengan mengkonversi suatu posisi titik
+        koordinat dengan program aplikasi ke dalam suatu operasi tertentu
+        menggunakan output. Random-scan (vektor)system menyimpan instruksi
+        pembentukan titik pada display list dan nilai koordinat 22 menentukan
+        posisi pancaran electron ke arah lapisan fosfor pada layer. Garis dibuat
+        dengan menentukan posisi titik diantara titik awal dan akhir dari suatu
+        garis.
+      </p>
+    </section>
+
+    <section>
+      <h1>Algoritma DDA</h1>
+      <p>
+        DDA adalah algoritma pembentukan garis berdasarkan perhitungan Δx dan
+        Δy, menggunakan rumus y = m. Δ x. Garis dibuat dengan menentukan dua
+        endpoint yaitu titik awal dan titik akhir. Setiap koordinat titik yang
+        membentuk garis diperoleh dari perhitungan, kemudian dikonversikan
+        menjadi nilai integer. Langkah-langkah pembentukan menurut algoritma
+        DDA, yaitu :
+
+				<ol>
+					<li>Tentukan dua titik yang akan dihubungkan.</li>
+					<li>Tentukan salah satu titik sebagai titik awal (x0, y0) dan titik akhir (x1, y1).</li>
+					<li>Hitung Δx = x1 – x0 dan Δ y = y1 – y0</li>
+					<li>Tentukan step, yaitu jarak maksimum jumlah penambahan nilai x maupun nilai y dengan cara</li>
+					<li>bila nilai |Δy| > |Δx| maka step = nilai |Δy|.</li>
+					<li>bila tidak maka step = |Δx|.</li>
+					<li>Hitung penambahan koordinat pixel yaitu x_increment = Δx / step dan y_increment = Δy / step</li>
+					<li>Koordinat selanjutnya (x+x_incerement, y+y_increment).</li>
+					<li>Posisi pixel pada layer ditentukan dengan pembulatan nilai koordinasi tersebut.</li>
+					<li>Ulangi step 6 dan 7 untuk menentukan posisi pixel selanjutnya, sampai x = x1 dan y = y1</li>
+				</ol>
+      </p>
+    </section>
+
+    <section>
+      <h1>Algoritma Bresenham</h1>
+      <p>
+        Algoritma-algoritma sebelumnya secara umum sudah dapat menjawab masalah
+        penggambaran garis, namun dalam komputasinya masih mengandung
+        perhitungan aritmatik yang secara analisis membuat kebutuhan sumber daya
+        komputasi menjadi besar karena operasi floating points.Untuk itu
+        dikembangkan algoritma lain yaitu algoritma Bresenham yang bekerja pada
+        domain bilangan integer sehingga walaupun algoritma menjadi panjang
+        namun lebih efisien.Algoritma BressenhamProsedur untuk menggambar
+        kembali garis dengan membulatkan nilai x atau y kebilangan integer
+        membutuhkan waktu, serta variable x,y dan m merupakan bilangan real
+        karena kemiringan merupakan nilai pecahan. Bressenham mengembangkan
+        algoritma klasik yang lebih menarik, karena hanya menggunakan
+        perhitungan matematika dengan bilangan integer. Dengan demikian tidak
+        perlu membulatkan nilai posisi setiap pixel setiap waktu. Algoritma
+        garis Bressenhem disebut juga midpoint line algorithm adalah algoritma
+        konversi penambahan nilai integer yang juga dapat diadaptasi untuk
+        menggambar sebuah lingkaran.
+				<br>
+				Langkah-langkah untuk membentuk garis menurut algoritma ini adalah :
+				<ol>
+					<li>Tentukan dua titik yang akan dihubungkan dalam pembentukan garis.</li>
+					<li>Tetukan salah satu titik disebelah kiri sebagai titik awal (x0, y0) dan titik lainnya sebagai titik akhir (x1, y1).</li>
+					<li>Hitung Δx, Δy, Δ2x, dan 2Δy – 2Δx.</li>
+					<li>Hitung parameter p0 = 2Δy – Δx.</li>
+					<li>Untuk setiap xk sepanjang jalur garis, dimulai dengan k = 0</li>
+					<li>bila pk <0 maka titik selanjutnya (xk+1, yk) dan pk+1 = pk +2Δy</li>
+					<li>bila tidak maka titik selanjutnya adalah (xk+1, yk+1)</li>
+					<li>dan pk+1=pk+2Δ-y2Δx.</li>
+					<li>Ulangi langkah nomor 5 untuk menentukan posisi pixel selanjutnya, sampai x=xn</li>
+				</ol>
+      </p>
+    </section>
+		<section>
+			<h1>Resources</h1>
+		</section>
+		<section>
+			<h1>About</h1>
+			<p>Website ini dibuat oleh Deden Muhammad Furqon dan Rifqi Sambas Khairurrohman</p>
+		</section>
+  </body>
+</html>
