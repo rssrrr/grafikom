@@ -41,6 +41,12 @@ function dda(x1, y1, x2, y2) {
   }
 }
 
+function clearDda(){
+  var canvas = document.getElementById('dda');
+  const context = canvas.getContext('2d');
+  context.clearRect(0, 0, canvas.width, canvas.height);
+}
+
 function bresenhem(x1, y1, x2, y2) {
   let c = document.getElementById("bresenhem");
   let ctx = c.getContext("2d");
@@ -70,4 +76,10 @@ function bresenhem(x1, y1, x2, y2) {
     ctx.putImageData(imgData, x, y);
     console.log(x + " " + y);
   }
+}
+
+function clearBresemhem(){
+  var canvas = document.getElementById('bresenhem');
+  const context = canvas.getContext('2d');
+  context.clearRect(0, 0, canvas.width, canvas.height);
 }

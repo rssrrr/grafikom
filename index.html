@@ -18,12 +18,12 @@
               <a href="#primitif">Objek Primitif</a>
               <ul>
                 <li>
-                  <a href="">Penggambaran Objek Primitif</a>
+                  <a href="#primitif">Penggambaran Objek Primitif</a>
                   <ul>
-                    <li><a href="">Penggambaran Titik dan Garis</a></li>
+                    <li><a href="#titik_garis">Penggambaran Titik dan Garis</a></li>
                     <ul>
-                      <li><a href="">Algoritma DDA</a></li>
-                      <li><a href="">Algoritma Bresenham</a></li>
+                      <li><a href="#sub_dda">Algoritma DDA</a></li>
+                      <li><a href="#sub_bresemham">Algoritma Bresenham</a></li>
                     </ul>
                   </ul>
                 </li>
@@ -98,7 +98,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="titik_garis">
       <h1>Penggambaran Titik dan Garis</h1>
       <p>
         Pembentukan titik dilakukan dengan mengkonversi suatu posisi titik
@@ -111,7 +111,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="sub_dda">
       <h1>Algoritma DDA</h1>
       <p>
         DDA adalah algoritma pembentukan garis berdasarkan perhitungan Δx dan
@@ -137,9 +137,14 @@
 			<div>
 				<canvas id="dda" width=800 height="360" style="border:1px solid #d3d3d3; animation-duration: 0.7;"></canvas>
 			</div>
-			<button onclick="dda(10,10,170,160)">DDA</button>
+      <input id="dda_x1" type="number"  style="width: 40px;" maxlength="3" placeholder="x1" required>
+      <input id="dda_y1" type="number"  style="width: 40px;" maxlength="3" placeholder="y1" required>
+      <input id="dda_x2" type="number"  style="width: 40px;" maxlength="3" placeholder="x2" required>
+      <input id="dda_y2" type="number"  style="width: 40px;" maxlength="3" placeholder="y2" required>
+			<button onclick="hitungDda()">hitung dda</button>
+			<button onclick="clearDda()">clear canvas</button>
     </section> 
-    <section>
+    <section id="sub_bresemham">
       <h1>Algoritma Bresenham</h1>
       <p>
         Algoritma-algoritma sebelumnya secara umum sudah dapat menjawab masalah
@@ -175,13 +180,40 @@
       </p>
 			<div>
 			<canvas id="bresenhem" width=800 height="360" style="border:1px solid #d3d3d3; animation-duration: 0.7;"></canvas>
-			</div>
-			<button onclick="bresenhem(10,10,170,160)">bresenhem</button>
+      </div>
+      <input id="bre_x1" type="number"  style="width: 40px;" maxlength="3" placeholder="x1" required>
+      <input id="bre_y1" type="number"  style="width: 40px;" maxlength="3" placeholder="y1" required>
+      <input id="bre_x2" type="number"  style="width: 40px;" maxlength="3" placeholder="x2" required>
+      <input id="bre_y2" type="number"  style="width: 40px;" maxlength="3" placeholder="y2" required>
+			<button onclick="hitungBresemhem()">hitung bresenhem</button>
+			<button onclick="clearBresemhem()">clear canvas</button>
     </section>
-		<section>
+		<section id="about">
 			<h1>About</h1>
 			<p>Website ini dibuat oleh Deden Muhammad Furqon dan Rifqi Sambas Khairurrohman</p>
-		</section>
+    </section>
+
+    <script>
+      function hitungDda(){
+        var dda_x1 = document.getElementById("dda_x1").value;
+        var dda_x2 = document.getElementById("dda_x2").value;
+        var dda_y1 = document.getElementById("dda_y1").value;
+        var dda_y2 = document.getElementById("dda_y2").value;
+
+        // dda(dda_x1,dda_y1,dda_x2,dda_y2);
+        bresenhem(dda_x1,dda_y1,dda_x2,dda_y2);
+      }
+
+      function hitungBresemhem(){
+        var bre_x1 = document.getElementById("bre_x1").value;
+        var bre_x2 = document.getElementById("bre_x2").value;
+        var bre_y1 = document.getElementById("bre_y1").value;
+        var bre_y2 = document.getElementById("bre_y2").value;
+
+        bresenhem(bre_x1,bre_y1,bre_x2,bre_y2);
+      }
+    </script>
+
 		<script src="script.js"></script>
   </body>
 </html>
