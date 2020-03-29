@@ -327,14 +327,7 @@ Perkembangan grafika komputer dapat dibagi menjadi 4 fase, yaitu
             <section class="docs-section" id="item-4-1">
               <h2 class="section-heading">Digital Differential Analyzer</h2>
               <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
+							Algoritma DDA bekerja bekerja atas dasar penambahan nilai x dan nilai y. Pada garis lurus, turunan pertama dari x dan y adalah konstanta. Sehingga untuk memperoleh suatu tampilan dengan ketelitian tinggi, suatu garis dapat dibangkitkan dengan menambah nilai x dan y masing-masing sebesar eΔx dan eΔy, dengan besaran dengan nilai yang sangat kecil. Kondisi ideal ini sukar dicapai, karenanya pendekatan yang mungkin dilakukan adalah berdasarkan piksel-piksel yang bisa dialamati/dicapai atau melalui penambahan atau pengurangan nilai x dan y dengan suatu besaran dan membulatkannya ke nilai integer terdekat.
               </p>
             </section>
             <!--//section-->
@@ -342,14 +335,7 @@ Perkembangan grafika komputer dapat dibagi menjadi 4 fase, yaitu
             <section class="docs-section" id="item-4-2">
               <h2 class="section-heading">Bresenham</h2>
               <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
+							Tujuan dari algoritma Bressenham ini adalah untuk menghindari pembulatan nilai seperti pada algoritma DDA. Pada algoritma bressenham, nilai y kedua dan seterusnya, dihitung dari nilai y sebelumnya, sehingga hanya titik y pertama yang perlu dilakukan operasi secara lengkap. Perbaikan algoritma ini ternyata tidak menghasilkan perbaikan yang cukup siginifikan. Perbaikan berikutnya dilakukan dengan cara menghilangkan operasi bilangan riel dengan operasi bilangan integer. Operasi bilangan integer jauh lebih cepat dibandingkan dengan operasi bilangan riel, terutama pada penambahan dan pengurangan.
               </p>
             </section>
             <!--//section-->
@@ -361,12 +347,7 @@ Perkembangan grafika komputer dapat dibagi menjadi 4 fase, yaitu
               <h1 class="docs-heading">Implementasi</h1>
               <section class="docs-intro">
                 <p>
-                  Section intro goes here. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Quisque finibus condimentum nisl
-                  id vulputate. Praesent aliquet varius eros interdum suscipit.
-                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
-                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
-                  Fusce in malesuada odio.
+								Berikut adalah contoh implementasi dari algoritma dda dan bresenhem dalam pembuatan objek garis
                 </p>
               </section>
               <!--//docs-intro-->
