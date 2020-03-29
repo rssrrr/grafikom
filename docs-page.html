@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Grafika Komputer
+    </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Bootstrap 4 Template For Software Startups"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+		<style>
+			p {
+				text-align: justify;
+			}
+		</style>
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  class="logo-icon mr-2"
+                  src="assets/images/coderdocs-logo.svg"
+                  alt="logo"
+                /><span class="logo-text"
+                  >Grafika<span class="text-alt">Komputer</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Pengenalan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Grafikom 101</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-2">Sejarah Grafikom</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-arrow-down"></i></span
+                >Objek Primitif</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1">Titik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2">Garis</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-3"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-box"></i></span
+                >Penggambaran Objek</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-1">Titik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-2">Garis</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-4"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-cogs"></i></span
+                >Algoritma</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-1">DDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-2">Bressenham</a>
+            </li>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-5"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-tools"></i></span
+                >Implementasi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-1">DDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-2">Bressenham</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                Pengenalan
+              </h1>
+              <section class="docs-intro">
+                <p>
+								website ini merupakan media untuk mempelajari materi seputar garika komputer.
+                </p>
+              </section>
+              <!--//docs-intro-->
+
+            </header>
+            <section class="docs-section" id="item-1-1">
+              <h2 class="section-heading">Grafikom 101</h2>
+              <p>
+							Grafika komputer adalah teknik-teknik dalam ilmu komputer dan matematika untuk merepresentasikan dan memanipulasi data gambar menggunakan komputer. Dengan bahasa lain, istilah grafika komputer juga dapat diartikan segala sesuatu selain teks atau suara.
+              </p>
+							<p>
+							Salah satu aplikasi yang nyata dari grafika komputer adalah untuk visualisasi data dalam bentuk grafis 2D atau 3D dilengkapi dengan animasi. Grafika komputer muncul sebagai bagian ilmu komputer yang mempelajari metode-metode sintesa dan manipulasi konten visual secara dijital.
+							</p>
+							      <p>
+        lihat juga video penjelasan tentang grafika komputer oleh crash course
+        melalui video berikut
+      </p>
+      <p>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/TEAtmCYYKZA"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-2">
+              <h2 class="section-heading">Sejarah Grafikom</h2>
+              <p>
+              </p>
+            </section>
+            <!--//section-->
+
+          </article>
+
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Objek Primitif</h1>
+              <section class="docs-intro">
+                <p>
+								Gambar dapat dijelaskan dengan beberapa cara, bila menggunakan raster display, gambar ditentukan oleh satu set intensitas untuk posisi display pada display. Sedangkan dengan scenetampilan gambar dengan loading array dari pixel ke dalam buffer atau dengan mengkonversikan scan dari grafik geometri tertentu ke dalam pola pixel. Paket grafika dilengkapi dengan fungsi untuk menyatakan scene dalam bentuk struktur. Paket pemrograman grafika dilengkapi dengan fungsi untuk menyatakan scenedalam bentuk struktur dasar geometri yang disebut output primitif, dengan memasukkan output primitif tersebut sebagai struktur yang lebih kompleks.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Titik</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Garis</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">Penggambaran Objek</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-3-1">
+              <h2 class="section-heading">Penggamabaran Garis</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-2">
+              <h2 class="section-heading">Penggamabaran Titik</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-4">
+            <header class="docs-header">
+              <h1 class="docs-heading">Algoritma</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-4-1">
+              <h2 class="section-heading">Digital Differential Analyzer</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-4-2">
+              <h2 class="section-heading">Bresenham</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-5">
+            <header class="docs-header">
+              <h1 class="docs-heading">Implementasi</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-5-1">
+              <h2 class="section-heading">implementasi DDA</h2>
+              <div>
+                <canvas id="dda" width=800 height="360" style="border:1px solid #d3d3d3; animation-duration: 0.7;"></canvas>
+              </div>
+              <form action="">
+                <input id="dda_x1" type="number"  style="width: 50px;" maxlength="3" placeholder="x1" required>
+                <input id="dda_y1" type="number"  style="width: 50px;" maxlength="3" placeholder="y1" required>
+                <input id="dda_x2" type="number"  style="width: 50px;" maxlength="3" placeholder="x2" required>
+                <input id="dda_y2" type="number"  style="width: 50px;" maxlength="3" placeholder="y2" required>
+                <button onclick="hitungDda()">generate dda</button>
+                <button onclick="clearDda()">clear canvas</button>
+              </form>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-2">
+              <h2 class="section-heading">Implementasi Bresenham</h2>
+                <div>
+                  <canvas id="bresenhem" width=800 height="360" style="border:1px solid #d3d3d3; animation-duration: 0.7;"></canvas>
+                </div>
+              <form action="">
+                <input id="bre_x1" type="number"  style="width: 50px;" maxlength="3" placeholder="x1" required>
+                <input id="bre_y1" type="number"  style="width: 50px;" maxlength="3" placeholder="y1" required>
+                <input id="bre_x2" type="number"  style="width: 50px;" maxlength="3" placeholder="x2" required>
+                <input id="bre_y2" type="number"  style="width: 50px;" maxlength="3" placeholder="y2" required>
+                <button onclick="hitungBresemham()">generate bresenham</button>
+                <button onclick="clearBresemhem()">clear canvas</button>
+              </form>
+            </section>
+            <!--//section-->
+
+          </article>
+          <!--//docs-article-->
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <script>
+      function hitungDda(){
+        var dda_x1 = document.getElementById("dda_x1").value;
+        var dda_x2 = document.getElementById("dda_x2").value;
+        var dda_y1 = document.getElementById("dda_y1").value;
+        var dda_y2 = document.getElementById("dda_y2").value;
+
+        dda(dda_x1,dda_y1,dda_x2,dda_y2);
+        // dda(10,10,130,130);
+      }
+
+      function hitungBresemham(){
+        var bre_x1 = document.getElementById("bre_x1").value;
+        var bre_x2 = document.getElementById("bre_x2").value;
+        var bre_y1 = document.getElementById("bre_y1").value;
+        var bre_y2 = document.getElementById("bre_y2").value;
+
+        bresenhem(bre_x1,bre_y1,bre_x2,bre_y2);
+      }
+    </script>
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
